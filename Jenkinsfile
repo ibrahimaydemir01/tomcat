@@ -6,7 +6,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'build.sh'
-                ls
+                sh "ls"
             }
         }       
     }
