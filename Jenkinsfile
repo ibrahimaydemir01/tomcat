@@ -13,9 +13,9 @@ pipeline {
                 sh './push.sh $BUILD_NUMBER'
             }
         }
-        stage('Publish') {
+        stage('Deploy') {
             steps {
-                sh './publish.sh'
+                sh './deploy.sh'
             }
         }              
     }
